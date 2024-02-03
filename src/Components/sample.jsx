@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import React from "react";
 import {
   Card,
   CardContent,
@@ -6,21 +6,22 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from "./ui/card";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+import { Button } from "./ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+
 // import { Icons } from "@/components/icons"
 
 const Login = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <Tabs defaultValue="account" className="w-[600px] ">
-        <TabsList className="grid w-full grid-cols-2 ">
-          <TabsTrigger value="account">As Organization</TabsTrigger>
-          <TabsTrigger value="password">As Volunteer</TabsTrigger>
-        </TabsList>
-        <TabsContent value="account">
+    <Tabs defaultValue="account" className="w-[400px]">
+      <TabsList className="grid w-full grid-cols-2 ">
+        <TabsTrigger value="account">Account</TabsTrigger>
+        <TabsTrigger value="password">Password</TabsTrigger>
+      </TabsList>
+      <TabsContent value="account">
           <Card className="border border-black m-10">
             <CardHeader className="space-y-1">
               <CardTitle className="text-2xl">Become an Organizer</CardTitle>
@@ -69,8 +70,10 @@ const Login = () => {
               <Button className="w-full">Create account</Button>
             </CardFooter>
           </Card>
-        </TabsContent>
-        <TabsContent value="password">
+      
+      </TabsContent>
+      <TabsContent value="password">
+
           <Card className="border border-black m-10">
             <CardHeader className="space-y-1">
               <CardTitle className="text-2xl">Become a Volunteer</CardTitle>
@@ -118,9 +121,9 @@ const Login = () => {
               <Button className="w-full">Create account</Button>
             </CardFooter>
           </Card>
-        </TabsContent>
-      </Tabs>
-    </div>
+
+      </TabsContent>
+    </Tabs>
   );
 };
 

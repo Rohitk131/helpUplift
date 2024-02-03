@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 # helpUplift
 # helpUplift
 # HelpUpLift1
+# HelpUpLift1

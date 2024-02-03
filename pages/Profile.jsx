@@ -5,7 +5,6 @@ const Profile = ({ user }) => {
   return (
     <div>
         <Navbar/>
-        
     </div>
   );
 };

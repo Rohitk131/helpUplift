@@ -20,6 +20,7 @@ import teamworkImage from "/teamwork.png";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { SiFigma } from "react-icons/si";
+import Footer from '../src/Components/Footer'
 
 const Home = () => {
   return (
@@ -289,6 +290,7 @@ const Home = () => {
           </AccordionItem>
         </Accordion>
       </div>
+      <Footer/>
     </div>
   );
 };

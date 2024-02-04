@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import Profile from "../pages/Profile"
 import OrgHome from "../pages/OrgHome";
 import Leaderboard from "../pages/Leaderboard";
-
+import Dashboard from "../pages/Dashboard";
 export default function App() {
   return (
     <Router>
@@ -15,6 +15,7 @@ export default function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/dashboard" element={<OrgHome/>} />
         <Route path="/leaderboard" element={<Leaderboard/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
     </Router>
   );

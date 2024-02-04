@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../src/Components/Navbar";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   Accordion,
@@ -33,7 +33,10 @@ const Home = () => {
         <div className="font-poppins absolute top-[200px] left-[100px] text-black text-7xl font-bold">
           Welcome to
           <br />
-          <span className="text-green-400 text-8xl font-poppins"> HelpUplift</span>
+          <span className="text-green-400 text-8xl font-poppins">
+            {" "}
+            HelpUplift
+          </span>
         </div>
         <p className="font-poppins absolute top-[400px] left-[-280px] right-[280px] text-gray-700 text-2xl font-semibold px-96 text-start mt-2">
           Empowering Change Through Volunteerism
@@ -43,8 +46,16 @@ const Home = () => {
           discover and engage in meaningful volunteer opportunities. Together,
           let's create positive change in our communities and beyond.
         </p>
-        <Link to="/login"><button className="bg-green-400 text-2xl absolute bottom-[100px] left-[100px] p-4 rounded">Join Our Community</button></Link>
-        <Link to="/contact"><button className="bg-black text-white text-2xl absolute bottom-[100px] left-[400px] p-4 rounded">Contact Us</button></Link>
+        <Link to="/login">
+          <button className="bg-green-400 text-2xl absolute bottom-[100px] left-[100px] p-4 rounded">
+            Join Our Community
+          </button>
+        </Link>
+        <Link to="/contact">
+          <button className="bg-black text-white text-2xl absolute bottom-[100px] left-[400px] p-4 rounded">
+            Contact Us
+          </button>
+        </Link>
       </div>
       <div className="bg-green-300 rounded-3xl flex justify-evenly m-10 shadow-xl shadow-gray-400">
         <Card className="rounded-2xl w-[20vw] h-[300px] my-[100px]">
@@ -115,14 +126,18 @@ const Home = () => {
       </div>
 
       <div className="rounded-3xl m-0 pt-16">
-        <h1 className="text-6xl font-extrabold w-fit mx-auto bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-poppins">Our Sponsers</h1>
+        <h1 className="text-6xl font-extrabold w-fit mx-auto bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-poppins">
+          Our Sponsers
+        </h1>
         <div className="flex justify-evenly mt-[-10px]">
           <Card className=" w-[20vw] h-[300px] my-[100px] shadow-lg shadow-gray-300 rounded-3xl">
             <CardHeader>
               <SiGithub className="w-fit h-[100px] mx-auto" />
             </CardHeader>
             <CardContent>
-              <p className="text-5xl w-fit mx-auto mt-10 font-poppins">Github</p>
+              <p className="text-5xl w-fit mx-auto mt-10 font-poppins">
+                Github
+              </p>
             </CardContent>
           </Card>
           <Card className=" w-[20vw] h-[300px] my-[100px] shadow-lg shadow-gray-300 rounded-3xl">
@@ -130,7 +145,9 @@ const Home = () => {
               <FaLinkedin className="w-fit h-[100px] mx-auto" />
             </CardHeader>
             <CardContent>
-              <p className="text-5xl w-fit mx-auto mt-10 font-poppins">LinkedIn</p>
+              <p className="text-5xl w-fit mx-auto mt-10 font-poppins">
+                LinkedIn
+              </p>
             </CardContent>
           </Card>
           <Card className=" w-[20vw] h-[300px] my-[100px] shadow-lg shadow-gray-300 rounded-3xl">
@@ -144,26 +161,130 @@ const Home = () => {
         </div>
       </div>
       <div className=" w-[90vw] mx-auto bg-gray-500 rounded-2xl my-10 pt-10 pb-10 ">
-        <div className="text-6xl font-extrabold w-fit mx-auto underline text-white font-poppins">FAQ's</div>
+        <div className="text-6xl font-extrabold w-fit mx-auto underline text-white font-poppins">
+          FAQ's
+        </div>
         <Accordion type="single" collapsible className="m-20 text-white">
           <AccordionItem value="item-1">
-            <AccordionTrigger className="font-poppins">Is it accessible?</AccordionTrigger>
+            <AccordionTrigger className="font-poppins">
+              What is HelpUplift and what is its purpose?
+            </AccordionTrigger>
             <AccordionContent className="font-poppins">
-              Yes. It adheres to the WAI-ARIA design pattern.
+              HelpUplift is an online platform dedicated to connecting
+              volunteers with organizations to collaborate on social cause-based
+              projects. Our purpose is to facilitate meaningful volunteering
+              experiences and drive positive social impact in communities
+              worldwide.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger className="font-poppins">Is it styled?</AccordionTrigger>
+            <AccordionTrigger className="font-poppins">
+              How can I get involved as a volunteer?
+            </AccordionTrigger>
             <AccordionContent className="font-poppins">
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
+              To get involved as a volunteer, simply create a profile on our
+              website, browse through the available projects posted by
+              organizations, and apply to those that match your interests and
+              skills. Once selected by the organization, you can start
+              contributing to the project and making a difference in your
+              community.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger className="font-poppins">Is it animated?</AccordionTrigger>
+            <AccordionTrigger className="font-poppins">
+              How do organizations post projects on HelpUplift?
+            </AccordionTrigger>
             <AccordionContent className="font-poppins">
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              Organizations can post projects on HelpUplift by registering for
+              an account, creating a profile, and submitting project details
+              such as the social cause, objectives, required skills, time
+              commitment, and location (if applicable). Our platform makes it
+              easy for organizations to reach volunteers and manage project
+              applications efficiently.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="font-poppins">
+              Can I volunteer remotely or virtually?
+            </AccordionTrigger>
+            <AccordionContent className="font-poppins">
+              Yes, HelpUplift offers virtual volunteering opportunities for
+              those who prefer to contribute remotely. You can participate in
+              virtual projects such as online tutoring, digital advocacy,
+              research, content creation, and more from the comfort of your
+              home.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-5">
+            <AccordionTrigger className="font-poppins">
+              How can I track my volunteer hours and contributions?
+            </AccordionTrigger>
+            <AccordionContent className="font-poppins">
+              Your volunteer hours and contributions are tracked automatically
+              through your profile dashboard on HelpUplift. You can view your
+              total volunteer hours, projects participated in, and impact
+              achieved, providing you with a record of your contributions to the
+              community.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-6">
+            <AccordionTrigger className="font-poppins">
+              How are volunteers selected for projects?
+            </AccordionTrigger>
+            <AccordionContent className="font-poppins">
+              Volunteers are selected for projects based on their
+              qualifications, skills, availability, and fit for the project as
+              determined by the organization. Organizations review volunteer
+              applications submitted through the platform and select volunteers
+              who best match the project's needs and objectives.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-7">
+            <AccordionTrigger className="font-poppins">
+              Are there any requirements or qualifications to volunteer?
+            </AccordionTrigger>
+            <AccordionContent className="font-poppins">
+              The requirements and qualifications to volunteer vary depending on
+              the specific projects posted by organizations. Some projects may
+              require specific skills or experience, while others may be open to
+              volunteers of all backgrounds and abilities. You can find detailed
+              information about project requirements in the project
+              descriptions.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-8">
+            <AccordionTrigger className="font-poppins">
+              How can I stay updated on new projects and volunteering
+              opportunities?
+            </AccordionTrigger>
+            <AccordionContent className="font-poppins">
+              To stay updated on new projects and volunteering opportunities,
+              regularly check our website for project listings, subscribe to our
+              newsletter for notifications, and follow us on social media for
+              the latest updates and announcements.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-9">
+            <AccordionTrigger className="font-poppins">
+              Is there any training or support available for volunteers?
+            </AccordionTrigger>
+            <AccordionContent className="font-poppins">
+              HelpUplift provides resources, training materials, and support for
+              volunteers to enhance their skills and knowledge. Additionally,
+              organizations may offer training or orientation sessions for
+              volunteers participating in specific projects.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-10">
+            <AccordionTrigger className="font-poppins">
+              How can I provide feedback or report issues on the website?
+            </AccordionTrigger>
+            <AccordionContent className="font-poppins">
+              If you have any feedback, questions, or issues regarding the
+              website, please contact our support team through the contact form
+              or email provided on the website. We welcome your feedback and are
+              committed to continuously improving our platform to better serve
+              our community.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

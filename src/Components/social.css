@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.image {
+    position: absolute;
+    top: 5px; /* Adjust the top position as needed */
+    left: 5px; /* Adjust the left position as needed */
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+  }
+
+  .text {
+    position: absolute;
+    bottom: 30px; /* Adjust the bottom position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    font-size: 25px; /* Adjust the font size as needed */
+    color: gray; /* Adjust the text color as needed */
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+  }
+  

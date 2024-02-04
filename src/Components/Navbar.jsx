@@ -23,7 +23,7 @@ export default function Example() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-            <Link to='/'><img className='h-10 pr-10' src={Logo} alt='HelpUplift'/></Link>
+            <a href='/'><img className='h-10 pr-10' src={Logo} alt='HelpUplift'/></a>
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">

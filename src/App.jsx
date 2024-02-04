@@ -6,8 +6,9 @@ import Profile from "../pages/Profile"
 import OrgHome from "../pages/OrgHome";
 import Leaderboard from "../pages/Leaderboard";
 import Team from "../pages/Team";
-import Projects from "../pages/projects";
+import Projects from "../pages/Projects";
 import Enrolled from "../pages/enrolled";
+import Contact from "../pages/Contact";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/enprojects" element={<Enrolled />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

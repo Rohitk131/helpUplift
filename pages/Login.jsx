@@ -10,15 +10,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from "react";
 // import { Icons } from "@/components/icons"
 
 const Login = () => {
   return (
     <div className="flex justify-center items-center h-screen">
-      <Tabs defaultValue="account" className="w-[600px] ">
-        <TabsList className="grid w-full grid-cols-2 ">
-          <TabsTrigger value="account">As Organization</TabsTrigger>
-          <TabsTrigger value="password">As Volunteer</TabsTrigger>
+      <Tabs defaultValue="account" className="w-[600px]">
+        <TabsList className="grid w-full grid-cols-2">
+          <TabsTrigger value="account" >As Organization</TabsTrigger>
+          <TabsTrigger value="password" >As Volunteer</TabsTrigger>
         </TabsList>
         <TabsContent value="account">
           <Card className="border border-black m-10">
@@ -66,7 +67,7 @@ const Login = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">Create account</Button>
+              <Button className="w-full border-2 rounded">Create account</Button>
             </CardFooter>
           </Card>
         </TabsContent>

@@ -48,12 +48,12 @@ const Home = () => {
           let's create positive change in our communities and beyond.
         </p>
         <Link to="/login">
-          <button className="bg-green-400 text-2xl absolute bottom-[100px] left-[100px] p-4 rounded">
+          <button className="bg-green-400 text-2xl text-gray-50 font-semibold absolute bottom-[40px] left-[100px] p-3 rounded">
             Join Our Community
           </button>
         </Link>
         <Link to="/contact">
-          <button className="bg-black text-white text-2xl absolute bottom-[100px] left-[400px] p-4 rounded">
+          <button className="bg-black text-white text-2xl absolute bottom-[40px] left-[400px] p-3 rounded">
             Contact Us
           </button>
         </Link>

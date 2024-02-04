@@ -3,8 +3,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '/', current: window.location.pathname == "/" ? true : false },
-  { name: 'Team', href: '/team', current: window.location.pathname == "/team" ? true : false },
+  { name: 'Home', href: '/', current: window.location.pathname == "/" ? true : false },
+  { name: 'Leaderboard', href: '/leaderboard', current: window.location.pathname == "/leaderboard" ? true : false },
   { name: 'Projects', href: '/projects', current: window.location.pathname == "/projects" ? true : false },
   { name: 'Enrolled Projects', href: '/enprojects', current: window.location.pathname == "/enprojects" ? true : false },
 ]
@@ -95,7 +95,7 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="/profile"
                             className={classNames(active ? 'bg-blue-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Your Profile

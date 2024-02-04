@@ -1,7 +1,10 @@
 import React from "react";
+import Navbar from "../src/Components/Navbar";
 
 const Leaderboard = () => {
   return (
+    <div>
+    <Navbar/>
     <div className="bg-blue-200">
       <h1 className="m-2 text-7xl p-6 w-fit mx-auto bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-900 font-poppins">
         Leaderboard
@@ -40,6 +43,7 @@ const Leaderboard = () => {
         </table>
         </div>
         
+    </div>
     </div>
   );
 };

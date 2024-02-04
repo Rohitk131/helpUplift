@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../src/Components/Navbar";
+import {Link} from "react-router-dom";
 
 import {
   Accordion,
@@ -42,6 +43,8 @@ const Home = () => {
           discover and engage in meaningful volunteer opportunities. Together,
           let's create positive change in our communities and beyond.
         </p>
+        <Link to="/login"><button className="bg-green-400 text-2xl absolute bottom-[100px] left-[100px] p-4 rounded">Join Our Community</button></Link>
+        <Link to="/contact"><button className="bg-black text-white text-2xl absolute bottom-[100px] left-[400px] p-4 rounded">Contact Us</button></Link>
       </div>
       <div className="bg-green-300 rounded-3xl flex justify-evenly m-10 shadow-xl shadow-gray-400">
         <Card className="rounded-2xl w-[20vw] h-[300px] my-[100px]">

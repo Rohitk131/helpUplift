@@ -5,7 +5,10 @@ import Home from "../pages/Home";
 import Profile from "../pages/Profile"
 import OrgHome from "../pages/OrgHome";
 import Leaderboard from "../pages/Leaderboard";
-import Dashboard from "../pages/Dashboard";
+import Team from "../pages/Team";
+import Projects from "../pages/projects";
+import Enrolled from "../pages/enrolled";
+
 export default function App() {
   return (
     <Router>
@@ -15,7 +18,10 @@ export default function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/dashboard" element={<OrgHome/>} />
         <Route path="/leaderboard" element={<Leaderboard/>} />
-        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/team" element={<Team/>} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/enprojects" element={<Enrolled/>} />
+ 
       </Routes>
     </Router>
   );

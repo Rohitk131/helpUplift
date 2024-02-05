@@ -6,7 +6,7 @@ import Profile from "../pages/Profile"
 import OrgHome from "../pages/OrgHome";
 import Leaderboard from "../pages/Leaderboard";
 import Team from "../pages/Team";
-import Projects from "../pages/Projects";
+import Projects from "../pages/projects";
 import Enrolled from "../pages/enrolled";
 import Contact from "../pages/Contact";
 

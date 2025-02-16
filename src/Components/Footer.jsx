@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-full min-h-screen flex items-center justify-center bg-black">
         <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
           <div className="w-full text-7xl font-bold">
-            <h1 className="w-full md:w-2/3">Contribute to someone who need it !</h1>
+            <h1 className="w-full md:w-2/3"><span className='text-green-500'>Contribute</span> to someone who need it !</h1>
           </div>
           <div className="flex mt-8 flex-col md:flex-row md:justify-between">
             <p className="w-full md:w-2/3 text-gray-400">To ensure that content is verifiable, anyone may question an uncited claim. If your work has been tagged</p>

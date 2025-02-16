@@ -73,7 +73,7 @@ const Projects = () => {
   const CardP = ({ name, image }) => {
 
     return (
-      <div className='relative card h-[20rem] rounded-xl border-4 overflow-hidden transition hover:scale-105 hover:-translate-y-5 ease-in-out hover:shadow-2xl hover:shadow-green-300 bg-black cursor-pointer' onClick={() => {setActive(false) ; handleOpen() }}>
+      <div className='relative card h-[20rem] rounded-2xl shadow-gray-400 shadow-xl overflow-hidden transition hover:scale-102 hover:-translate-y-5 ease-in-out hover:shadow-2xl hover:shadow-green-500 bg-black cursor-pointer' onClick={() => {setActive(false) ; handleOpen() }}>
         <img src={image} className='imgLogo peer h-[20rem] w-[15rem] object-cover hover:opacity-50'></img>
         <h4 className='opacity-0 text-2xl font-bold text-white text-center absolute top-1/4 w-[100%] peer-hover:opacity-[100%] pointer-events-none'>{name}<br /><br />{<p variant="gradient" className=' bg-green-500 mx-10 py-1 rounded-xl'>Enroll Now</p>}</h4>
         <br />
@@ -84,13 +84,16 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-      <div className="h-40 m-5 sm:h-64 xl:h-80 2xl:h-80 2xl:m-10 mb-5 border rounded-xl overflow-hidden">
-        <Carousel slideInterval={2000}>
-          <img className='h-[100%] object-fill' src="https://www.divyam.org/wp-content/uploads/2021/04/Greyscale-City-Photo-Banner-Facebook-Cover-2.png" alt="..." />
-          <img className='h-[100%] object-fill' src="https://www.divyam.org/wp-content/uploads/2021/04/1.png" alt="..." />
-          <img className='h-[100%] object-fill' src="https://www.divyam.org/wp-content/uploads/2021/04/3.png" alt="..." />
-          <img className='h-[100%] object-fill' src="https://www.simplilearn.com/ice9/free_resources_article_thumb/real-impact-social-media.jpg" alt="..." />
-          <img className='h-[100%] object-fill' src="https://assets.skyfilabs.com/images/blog/revolve-mini-project-around-a-social-cause.jpg" alt="..." />
+      <h1 className='font-poppins text-black text-5xl font-bold p-10'>
+      Discover nearby social events.
+      </h1>
+      <div className="h-40 m-5 sm:h-64 xl:h-80 2xl:h-80 2xl:m-10 mb-5 border rounded-2xl overflow-hidden">
+        <Carousel slideInterval={1000}>
+          <img className='h-[100%] object-fill' src="https://as2.ftcdn.net/v2/jpg/05/51/81/81/1000_F_551818124_eskTTOoHGoKb8mkDHcLysCagGOLhKGJQ.jpg" alt="..." />
+          <img className='h-[100%] object-fill' src="https://volunteeralive.org/photos/POL_Conference.png" alt="..." />
+          <img className='h-[100%] object-fill' src="https://www.volunteeringwa.org.au/assets/nvw2022/website-banner-nvw-2022.png" alt="..." />
+          <img className='h-[100%] object-cover bottom-20' src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2019/12/07/1876701-2059735583.jpg?itok=ta1nU_G4" alt="..." />
+          <img className='h-[100%] object-cover' src="https://image.khaleejtimes.com/?uuid=464c0a77-b540-565d-bab1-2b58953088b0&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.84535&x=0&y=0&width=1200&height=675" alt="..." />
         </Carousel>
       </div>
       <Dialog
@@ -141,8 +144,8 @@ const Projects = () => {
         </Card>
       </Dialog>
 
-      <div className="container p-10">
-        <div className='flex flex-wrap gap-x-20 gap-y-8 justify-center'>
+      <div className="container p-20">
+        <div className='flex flex-wrap gap-x-20 gap-y-10 justify-center '>
           {
             data.map((i, index) => (
               <CardP name={i.name} image={i.cover} key={index} />
@@ -154,6 +157,7 @@ const Projects = () => {
     </>
   )
 }
+
 
 const theme = {
   dialog: {

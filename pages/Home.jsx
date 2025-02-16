@@ -48,18 +48,18 @@ const Home = () => {
           let's create positive change in our communities and beyond.
         </p>
         <Link to="/login">
-          <button className="bg-green-400 text-2xl text-gray-50 font-semibold absolute bottom-[40px] left-[100px] p-3 rounded">
+          <button className="font-poppins bg-green-400 text-2xl absolute bottom-[80px] left-[100px] p-4 rounded-xl">
             Join Our Community
           </button>
         </Link>
         <Link to="/contact">
-          <button className="bg-black text-white text-2xl absolute bottom-[40px] left-[400px] p-3 rounded">
+          <button className="font-poppins bg-black text-white text-2xl absolute bottom-[80px] left-[400px] p-4 rounded-xl">
             Contact Us
           </button>
         </Link>
       </div>
       <div className="bg-green-300 rounded-3xl flex justify-evenly m-10 shadow-xl shadow-gray-400">
-        <Card className="rounded-2xl w-[20vw] h-[300px] my-[100px]">
+        <Card className="bg-white rounded-2xl w-[20vw] h-[300px] my-[100px]">
           <CardHeader>
             <img
               src={socialWorkImage}
@@ -73,7 +73,7 @@ const Home = () => {
             <p className="text-3xl w-fit mx-auto font-poppins">Volunteers</p>
           </CardFooter>
         </Card>
-        <Card className="rounded-2xl w-[20vw] h-[300px] my-[100px] ">
+        <Card className=" bg-white rounded-2xl w-[20vw] h-[300px] my-[100px] ">
           <CardHeader>
             <img src={userImage} className="w-fit h-[100px] mx-auto "></img>
           </CardHeader>
@@ -84,7 +84,7 @@ const Home = () => {
             <p className="text-3xl w-fit mx-auto font-poppins">Organizations</p>
           </CardFooter>
         </Card>
-        <Card className="rounded-2xl w-[20vw] h-[300px] my-[100px] ">
+        <Card className="bg-white rounded-2xl w-[20vw] h-[300px] my-[100px] ">
           <CardHeader>
             <img src={teamworkImage} className="w-fit h-[100px] mx-auto"></img>
           </CardHeader>

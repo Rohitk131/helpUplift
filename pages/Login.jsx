@@ -15,14 +15,15 @@ import { useState } from "react";
 
 const Login = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <Tabs defaultValue="account" className="w-[600px]">
-        <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="account" >As Organization</TabsTrigger>
-          <TabsTrigger value="password" >As Volunteer</TabsTrigger>
+    <div className="flex justify-center items-center h-screen ">
+      <img src="https://preview.redd.it/t7b5j2cqpce21.png?auto=webp&s=722e7dcb6a150fc6be3513ab186cc60db0a9ab27"></img>
+      <Tabs defaultValue="account" className="w-[600px] absolute">
+        <TabsList className="bg-gray-100 grid w-full grid-cols-2 border border-2 rounded-2xl border-black">
+          <TabsTrigger value="account" className="bg-white rounded-3xl">As Organization</TabsTrigger>
+          <TabsTrigger value="password" className="bg-white rounded-3xl" >As Volunteer</TabsTrigger>
         </TabsList>
         <TabsContent value="account">
-          <Card className="border border-black m-10">
+          <Card className="border border-black m-10 rounded-2xl  bg-white">
             <CardHeader className="space-y-1">
               <CardTitle className="text-2xl">Become an Organizer</CardTitle>
               <CardDescription>
@@ -72,7 +73,7 @@ const Login = () => {
           </Card>
         </TabsContent>
         <TabsContent value="password">
-          <Card className="border border-black m-10">
+          <Card className="border border-black m-10 rounded-2xl  bg-white">
             <CardHeader className="space-y-1">
               <CardTitle className="text-2xl">Become a Volunteer</CardTitle>
               <CardDescription>

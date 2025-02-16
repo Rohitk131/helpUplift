@@ -1,132 +1,120 @@
-# HelpUpLift
-================================
+# README for HelpupLift
 
-### Project Title & Description
+## Table of Contents
 
-HelpUpLift is a website connecting students to hackathon organizations.
+1. [Project Title & Description](#project-title-description)
+2. [Table of Contents](#table-of-contents)
+3. [Installation Instructions](#installation-instructions)
+4. [Usage Guide](#usage-guide)
+5. [Project Structure](#project-structure)
+6. [API Documentation](#api-documentation)
+7. [Key Features](#key-features)
+8. [Environment Variables](#environment-variables)
+9. [Contributing Guidelines](#contributing-guidelines)
+10. [License](#license)
 
-### Table of Contents
------------------
+## Project Title & Description
 
-* [Project Title & Description](#project-title-description)
-* [Installation Instructions](#installation-instructions)
-* [Usage Guide](#usage-guide)
-* [Project Structure](#project-structure)
-* [API Documentation](#api-documentation)
-* [Key Features](#key-features)
-* [Environment Variables](#environment-variables)
-* [Contributing Guidelines](#contributing-guidelines)
-* [License](#license)
+### Project Title
+HelpupLift
 
-### Installation Instructions
----------------------------
+### Project Description
+HelpupLift is a website connecting students to hackathon organizations.
 
-To get started with HelpUpLift, follow these steps:
+## Installation Instructions
 
-### 1. Clone the Repository
+### Setup Dependencies
+
 ```bash
-git clone https://github.com/your-repo-url.git
-```
-
-### 2. Install Dependencies
-```bash
-cd HelpUpLift
 npm install
 ```
 
-### 3. Start the Development Server
+### Compile and Run
+
 ```bash
-npm start
+npm run start
 ```
 
-### Usage Guide
--------------
+## Usage Guide
 
-To use HelpUpLift, follow these steps:
+1. Navigate to the HelpupLift website
+2. Register as a student or hackathon organization
+3. Browse events or list your organization's events
+4. Connect with other students or hackathon organizations
 
-### 1. Access the Application
-Open your web browser and navigate to `http://localhost:3000`
-
-### Project Structure
-----------------------
+## Project Structure
 
 ```markdown
-HelpUpLift/
- src/
-components/
- App.js
-organisms/
- ...
- pages/
- Home.js
-Login.js
- ...
- utils/
- api.js
- auth.js
- ...
- public/
-index.html
- README.md
- package.json
+.
+├── app
+│   ├── API
+│   │   ├── apiControllers
+│   │   ├── apiModels
+│   │   └── apiRoutes.js
+│   ├── components
+│   │   └── ...
+│   └── views
+│       └── ...
+├── config
+│   └── database.js
+├── models
+│   ├── database.js
+│   └── user.js
+├── public
+│   └── ...
+├── routes
+│   ├── auth.js
+│   ├── events.js
+│   └── index.js
+├── services
+│   └── ...
+├── utils
+│   └── ...
+├── controllers
+│   └── ...
+├── helpers
+│   └── ...
+├── tests
+│   └── ...
+└── package.json
 ```
 
-### API Documentation
-----------------------
+## API Documentation
 
-### **Endpoints**
+### Endpoints
+
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| GET | `/api/hackathons` | Retrieve a list of hackathons |
-| GET | `/api/hackathons/:id` | Retrieve a single hackathon by ID |
-| POST | `/api/users` | Create a new user |
+| GET | `/api/events` | List all events |
+| POST | `/api/events` | Create a new event |
+| GET | `/api/organizations` | List all organizations |
+| POST | `/api/organizations` | Create a new organization |
 
-### Key Features
-----------------
+## Key Features
 
-*   Connection of students to hackathon organizations
-*   User registration and login functionality
-*   Hackathon listing and detail pages
+* Connect students to hackathon organizations
+* Browse events or list your organization's events
+* Register as a student or hackathon organization
 
-### Environment Variables
--------------------------
+## Environment Variables
 
-| Variable | Description | Default Value |
-| --- | --- | --- |
-| `REACT_APP_API_URL` | URL of the API endpoint | `http://localhost:3000` |
-| `REACT_APP_ENV` | Environment mode (e.g. development, production) | `development` |
+* `MONGODB_URI`: Database connection string
+* `JWT_SECRET`: Secret key for JWT authentication
 
-### Contributing Guidelines
----------------------------
+## Contributing Guidelines
 
-1.  Fork the repository on GitHub.
-2.  Create a new branch for your feature or bug fix.
-3.  Commit your changes with meaningful commit messages.
-4.  Open a pull request to the main branch.
+* Fork the repository and create a new branch for your feature
+* Follow the code style and naming conventions
+* Submit a pull request with a clear description
 
-### License
-----------
-
-HelpUpLift is licensed under the MIT License.
+## License
 
 MIT License
 
-Copyright (c) 2023
+Copyright (c) 2023 Your Name
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
